@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<boby>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo (1) - Shortcut.lnk">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>UI AND UX DESIGNER</p>
+            <h1>Hi I'm <span>Kevin K</span><br>from Australia</h1>
+        </div>
+    </div>
+</div>
+<div id="About Us">
+    <div class="container">
+        <div class="row">
+            <div class="About-col-1">
+                <img src="user - Shortcut.lnk" alt="">
+            </div>
+            <div class="About-col-2">
+                <h1 class="sub-title">About Me</h1>
+                
+                <p>I am a professionally qualified fire engineer with fresher<br>. I have recently achieved RTITB accreditation in the use of Counterbalance fork lift trucks<br> I am seeking employment that will make best use of my skills and allow me to develop them further. I am determined and enthusiastic,<br> I have developed good planning & organisational skills and am confident working independently or as part of a team. <br>I am flexible regarding working hours and am able to work a range of shifts.</p>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Interest Area</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>WEB Development</span><br>Web App Development</li>
+                        <li><span>APP Development</span><br>Development Android/IOS apps</li>
+                    </ul>
+
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>UI/UX-2021</span><br>UI/UX Completed in CODESONBYTES</li>
+                        <li><span>WEB Development-2022</span><br>MBA from SEC chennai</li>
+                        <li><span>APP Development-2023</span><br>MBA from SEC chennai</li>
+                    </ul>
+
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2021</span><br>UI/UX Completed in CODESONBYTES</li>
+                        <li><span>2022</span><br>MBA from SEC chennai</li>
+                        <li><span>2023</span><br>MBA from SEC chennai</li>
+                    </ul>
+
+                </div>
+
+            </div>
+    </div>
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Designing</h2>
+                <p>Web designing is the process of planning, conceptualizing, and <br> 
+                   implementing the plan for designing a website in a way that is functional and <br>
+                   offers a good user experience User experience is central 
+                   to the web designing process.</p>
+                   <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fas fa-crop"></i>
+                <h2>UI/UX</h2>
+                <p>the feeling users experience when using a product, application, system, or service. </p>
+                   <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store-ios"></i>
+                <h2>APP Development</h2>
+                <p> app development are diverse and constantly evolving as businesses continue to <br>
+                    explore new ways to leverage technology to improve their operations. <br>
+                    Here are some common examples- customer-facing apps, employee-facing apps, <br>
+                    data management apps, educational apps, healthcare apps. </p>
+                   <a href="#">Learn More</a>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1 - Shortcut.lnk">
+                <div class="layer">
+                    <h3>Social Media APP</h3>
+                    <p>Some of the steps involved in creating a social media app <br>
+            include defining the app's purpose and target audience,conducting market research, 
+            designing the user interface and user experience, developing the app's features, testing quality assurance, 
+            and launching and marketing the app.</p>
+                       <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2 - Shortcut.lnk">
+                <div class="layer">
+                    <h3>Music APP</h3>
+                    <p>To play music available in the databases of the service, compose 
+                            custom playlists and suggest similar songs</p>
+                       <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3 - Shortcut.lnk">
+                <div class="layer">
+                    <h3>Online Shopping APP</h3>
+                    <p> A mobile shopping app is an application that allows customers to browse 
+                            buy products or services from a retailer or service provider.</p>
+                       <a href=""><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        Event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+
+</script>
+
+    
+</body>
+</html>
